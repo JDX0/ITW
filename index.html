@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.png">
+  <title>Josefik</title>
+</head>
+
+<body>
+  <header>
+    <!--
+    <div class="intro">
+      <div class="intro-cover"></div>
+      <div class="content">
+        <h1>Josefik</h1>
+        <div class="cookies">
+          <p>Stisknutím tlačítka 「Souhlasím」 souhlasíte s používaním cookies abychom vám znovu nezobrazili tuto
+            obrazovku a analyzovali vaši duši.</p>
+          <div class="cookie-buttons">
+            <button type="button" id="cookie-accept">Souhlasím</button>
+            <button type="button" id="cookie-deny">Nesouhlasím</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <nav>
+      <div class="nav-main">
+        <div class="main-skew-bg"></div>
+        <div class="main-title-wrap">
+          <a href="https://supracausal.com">
+            <h1 class="main-title">Josefik</h1>
+          </a>
+        </div>
+      </div>
+      <div class="nav-side">
+        <div class="side-skew-bg"></div>
+        <ul class="nav-side-links">
+          <li>
+            <a href="#mista">Mind</a>
+          </li>
+          <li>
+            <a href="#tvorba">Body</a>
+          </li>
+          <li>
+            <a href="#konec">Link</a>
+          </li>
+        </ul>
+        <!--
+        <button id="nav-side-close">
+          <div class="skew-bg"></div><p>close</p><img src="images/icons/arrowright.svg" alt="" srcset="">
+        </button>-->
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="home">
+      <!--<video class="video-bg" autoplay muted loop src="images/vbg.webm"></video>-->
+      <div class="info">
+        <h1>You found me!</h1>
+        <hr>
+        <p>Now I await you. Through this website you can see a fraction of my soul and if you like it you can submit a
+          friend application!</p>
+      </div>
+    </div>
+
+    <div class="sections">
+      <div class="js-content" id="mista">
+        <section>
+          <div class="container">
+            <h1>Creations of my mind</h1>
+            <p>Creation is a core part of my life. A day filled only with consumption is an empty day.
+            </p>
+            <ul class="article-list">
+              <!-- modals based on one of my old projects https://github.com/JDX0/iedeix -->
+              <li>
+                <article>
+                  <div onclick='openModal("8")' class="card pointer">
+                    <video class="card-image" loop autoplay muted onmouseover="Play(this)" onmouseout="Pause(this)" width="100%">
+                      <source src="images/sci.webm" />
+                    </video>
+                    <div class="card-overlay">
+                      <div class="card-header">
+                        <div class="card-header-text">
+                          <h3 class="card-title">Space Station Corridor</h3>
+                          <span class="card-status">24/03/2020</span>
+                        </div>
+                      </div>
+                      <p class="card-description">An confused walk</p>
+                    </div>
+                  </div>
+                  <div class="modal transition" id="8" onclick="closeModal(this.id)">
+                    <div class="modal-box">
+                      <video class="modal-image" loop autoplay muted>
+                        <source src="images/sci.webm" />
+                      </video>
+                      <div class="modal-content">
+                        <h3 class="card-title">Space Station Corridor</h3>
+                        <span class="card-status">24/03/2020</span>
+                        <p class="modal-description">Quick animation in Blender</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <div onclick='openModal("9")' class="card pointer">
+                    <video class="card-image" loop autoplay muted onmouseover="Play(this)" onmouseout="Pause(this)" width="100%">
+                      <source src="images/intro.webm" />
+                    </video>
+                    <div class="card-overlay">
+                      <div class="card-header">
+                        <div class="card-header-text">
+                          <h3 class="card-title">JDX Logo + OS Loading Animation</h3>
+                          <span class="card-status">22/01/2022</span>
+                        </div>
+                      </div>
+                      <p class="card-description">Animation for system loading</p>
+                    </div>
+                  </div>
+                  <div class="modal transition" id="9" onclick="closeModal(this.id)">
+                    <div class="modal-box">
+                      <video class="modal-image" loop autoplay muted>
+                        <source src="images/intro.webm" />
+                      </video>
+                      <div class="modal-content">
+                        <h3 class="card-title">JDX Logo + Loading Animation</h3>
+                        <span class="card-status">22/01/2022</span>
+                        <p class="modal-description">
+                          Logo that was originally created in October 2019
+                        </p>
+                        <p class="modal-description">
+                          Animation was created in 2022 and was used as a loading screen
+                          for BSPWM - a Linux window manager
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="js-content" id="tvorba">
+        <section>
+          <div class="container">
+            <h1>Body</h1>
+            <div class="flex-row">
+              <p>I believe that the mind and body are inseparably interlinked and to improve one you have to improve
+                both.
+                I often ride my mountain bike or run. <br>
+                Here is a small selection of the places that I've enjoyed, you can see more on my Strava profile.
+              </p>
+
+              <iframe height='454' width='400' frameborder='0' allowtransparency='true' scrolling='no'
+                src='https://www.strava.com/athletes/104285740/latest-rides/1b4d90e8a2fc28e2f297226113a62d88860098e4'></iframe>
+            </div>
+            <div class="grid-container">
+              <div class="grid-item featured"><img src="images/places/3.avif" alt="Image 3"></div>
+              <div class="grid-item"><img src="images/places/1.avif" alt="Image 1"></div>
+              <div class="grid-item"><img src="images/places/2.avif" alt="Image 2"></div>
+              <div class="grid-item"><img src="images/places/4.avif" alt="Image 4"></div>
+              <div class="grid-item"><img src="images/places/5.avif" alt="Image 5"></div>
+              <div class="grid-item"><img src="images/places/6.avif" alt="Image 6"></div>
+              <div class="grid-item"><img src="images/places/7.avif" alt="Image 7"></div>
+              <div class="grid-item featured"><img src="images/places/8.avif" alt="Image 8"></div>
+              <div class="grid-item"><img src="images/places/9.avif" alt="Image 9"></div>
+              <div class="grid-item"><img src="images/places/10.avif" alt="Image 10"></div>
+              <div class="grid-item"><img src="images/places/11.avif" alt="Image 11"></div>
+              <div class="grid-item"><img src="images/places/12.avif" alt="Image 12"></div>
+              <div class="grid-item featured"><img src="images/places/13.avif" alt="Image 13"></div>
+              <div class="grid-item"><img src="images/places/14.avif" alt="Image 14"></div>
+              <div class="grid-item"><img src="images/places/15.avif" alt="Image 15"></div>
+              <div class="grid-item"><img src="images/places/16.avif" alt="Image 16"></div>
+              <div class="grid-item"><img src="images/places/17.avif" alt="Image 17"></div>
+              <div class="grid-item featured"><img src="images/places/18.avif" alt="Image 18"></div>
+              <div class="grid-item"><img src="images/places/19.avif" alt="Image 19"></div>
+              <div class="grid-item"><img src="images/places/20.avif" alt="Image 20"></div>
+              <div class="grid-item"><img src="images/places/21.avif" alt="Image 21"></div>
+              <div class="grid-item"><img src="images/places/22.avif" alt="Image 22"></div>
+              <div class="grid-item featured"><img src="images/places/23.avif" alt="Image 23"></div>
+              <div class="grid-item"><img src="images/places/24.avif" alt="Image 24"></div>
+              <div class="grid-item"><img src="images/places/25.avif" alt="Image 25"></div>
+              <div class="grid-item"><img src="images/places/26.avif" alt="Image 26"></div>
+              <div class="grid-item"><img src="images/places/27.avif" alt="Image 27"></div>
+              <div class="grid-item featured"><img src="images/places/28.avif" alt="Image 28"></div>
+              <div class="grid-item"><img src="images/places/29.avif" alt="Image 29"></div>
+              <div class="grid-item"><img src="images/places/30.avif" alt="Image 30"></div>
+              <div class="grid-item"><img src="images/places/31.avif" alt="Image 31"></div>
+              <div class="grid-item"><img src="images/places/32.avif" alt="Image 32"></div>
+              <div class="grid-item featured"><img src="images/places/33.avif" alt="Image 33"></div>
+              <div class="grid-item"><img src="images/places/34.avif" alt="Image 34"></div>
+              <div class="grid-item"><img src="images/places/35.avif" alt="Image 35"></div>
+              <div class="grid-item"><img src="images/places/36.avif" alt="Image 36"></div>
+              <div class="grid-item"><img src="images/places/37.avif" alt="Image 37"></div>
+              <div class="grid-item featured"><img src="images/places/38.avif" alt="Image 38"></div>
+              <div class="grid-item"><img src="images/places/39.avif" alt="Image 39"></div>
+              <div class="grid-item"><img src="images/places/40.avif" alt="Image 40"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="js-content" id="konec">
+        <section>
+          <div class="container form">
+            <div class="form-header">
+              <h1>Say hi!</h1>
+              <p>As mortals we can only experience a tiny fraction of the possibilities that life offers us. So ask
+                yourself — will this bring greatness?</p>
+            </div>
+
+            <form id="connect-form">
+              <div class="form-grid">
+                <div class="left-column">
+                  <div class="form-group">
+                    <label for="identity">Who are you?</label>
+                    <input type="text" id="identity" name="identity" placeholder="The identity you want me to see.">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">What do you desire to tell me?</label>
+                    <textarea id="message" name="message"
+                      placeholder="There are no wrong answers. Just the ones that matter."></textarea>
+                  </div>
+                </div>
+
+                <div class="right-column">
+                  <div class="form-group">
+                    <label>Are you seeking:</label>
+                    <div class="option-buttons">
+                      <div class="option-button" data-value="Connection">Connection</div>
+                      <div class="option-button" data-value="Collaboration">Collaboration</div>
+                      <div class="option-button" data-value="Reflection">Reflection</div>
+                      <input type="text" class="custom-input" id="custom-intent" name="custom-intent"
+                        placeholder="Custom" data-value="custom">
+                    </div>
+                    <input type="hidden" id="intent" name="intent">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact_method">How should I respond?</label>
+                    <input type="text" id="contact_method" name="contact_method"
+                      placeholder="Your email, Discord or nothing at all.">
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="submit-button">Send With Intention</button>
+
+              <div class="form-footer">
+                <p>DOES NOT ACTUALLY WORK YET. Every message will receive a reply. I will read it with presence and
+                  understanding.</p>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="left">© 2025</p>
+    <p class="right">Jan Josefik</p>
+  </footer>
+  <script src="sections.js"></script>
+  <script src="form.js"></script>
+  <script src="modals.js"></script>
+</body>
+
+</html>
